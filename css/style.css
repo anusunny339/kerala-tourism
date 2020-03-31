@@ -1,0 +1,55 @@
+.body1 {
+    background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+.header{
+    background-image: url('');
+    background-size: cover ;
+    background-position: center;
+    position: relative;
+}
+img{
+    margin-left: 10%;
+   
+}
+.head-tag{
+    float: right;
+
+    margin-top: 33px;
+    margin-right: 65px;
+}
+.head-tag a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration:none;
+    color: white;
+    border :1px solid white;
+    padding: 6px;
+}
+.head-tag a:hover{
+    background-color: royalblue;
+
+}
+
+  
+  .carousel {
+    height: 100vh;
+    width: 100%;
+    overflow:hidden;
+}
+.carousel .carousel-inner {
+    height:100%;  
+    width: 100%;  
+}
+.carousel .carousel-inner img {
+    display:block;
+    object-fit: cover;
+    display: block;
+        height: 500px;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+       
+}

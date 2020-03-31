@@ -1,0 +1,85 @@
+body{
+    padding:0;
+    position: 0;
+}
+.bg {
+    /* The image used */
+    background-image: url("https://www.holidify.com/images/compressed/dest_wiki_7534.jpg");
+}  
+.carousel-item {
+    height: 57vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .card{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+    }
+    .card-header h3{
+        color: white;
+    }
+    .input-group-prepend span{
+        width: 50px;
+        background-color: #FFC312;
+        color: black;
+        border:0 !important;
+        }
+        .card2{
+            height:100%;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 100%;
+            background-color: rgba(0,0,0,0.5) !important;
+            }
+        .card2-header h3{
+             color: white;
+        }
+  
+  figure{
+      border: 1px solid;
+      display: inline-block;
+      margin: 0;
+      position: relative;
+  }
+  figcaption {
+      border:1px solid white;
+      background-color:white;
+  }
+  h1{
+      color: blue;
+  }
+ h2{
+     color:blueviolet;
+     text-align: center;
+     
+ }
+  form{
+      border:1px solid white;
+      padding:30px;
+      background-color: white;
+      box-sizing: content-box;
+  }
+ form .caption
+ {
+     background-color: teal;
+ }
+ input{
+     width: 100%;
+     padding: 12px 10px;
+     margin: 8px;
+     display: inline-block;
+     border: 1px solid #ccc;
+    box-sizing: border-box
+ }
+ .container1 {
+    padding: 16px;
+  }
+  
