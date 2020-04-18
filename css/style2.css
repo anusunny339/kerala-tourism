@@ -24,9 +24,11 @@ body{
     height: 370px;
     margin-top: auto;
     margin-bottom: auto;
-    width: 400px;
+    width: 450px;
+    height:400px;
     background-color: rgba(0,0,0,0.5) !important;
     }
+
     .card-header h3{
         color: white;
     }
@@ -46,7 +48,15 @@ body{
         .card2-header h3{
              color: white;
         }
-  
+  .card3{
+   
+    margin-top: auto;
+    margin-bottom: auto;
+    width:600px;
+    height:650px;
+    background-color: rgba(0,0,0,0.5) !important;
+    }
+   
   figure{
       border: 1px solid;
       display: inline-block;
@@ -76,7 +86,7 @@ body{
      background-color: teal;
  }
  input{
-     width: 100%;
+     width: 200px;
      padding: 12px 10px;
      margin: 8px;
      display: inline-block;
@@ -92,3 +102,33 @@ body{
       height: 100px;
       text-align: center;
   }
+  .log input[type="email"],.log input[type="password"],.log input[type="text"],.log input[type="date"]
+  {
+      border: 2px solid rgb(43, 107, 226);
+      color:blue;
+      outline:none;
+      border-radius: 24px;
+      text-align: center;
+      transition: 0.25s;
+  }
+  .log input[type="submit"],.log input[type="reset"]{
+      width:200px;
+      border:2px solid blue;
+      outline: blueviolet;
+      border-radius: 24px;
+      text-align: center;
+      background-color:lightblue;
+      color:blue;
+      font-size:large;
+  }
+  .log input[type="text"]:hover,.log input[type="password"]:hover,.log input[type="email"]:hover
+  {
+      border:2px solid  rgb(43, 107, 226);
+  }
+  
+
+  .log input[type="submit"]:hover,.log input[type="reset"]:hover
+  {
+      background-color: rgb(43, 107, 226);
+  }
+  

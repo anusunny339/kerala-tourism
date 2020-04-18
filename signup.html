@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>signup</title>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -40,10 +40,15 @@
       <br>
       <div class="container">
           <div class="row">
-          
-            <div align="center">
-                
-                  <form action="">
+            <div class="col col-sm-4"></div>
+            <div class="col col-sm-4">
+              <div class="card3">
+                <div class="card-header">
+                  <h3>Sign Up</h3>
+                  <div class="card-body">
+                    <div class="log">
+            
+                  <form class="log" action="index.html" onsubmit="return log()">
                   <table class="">
                     <tr><h2>Sign Up</h2></tr>
                     <tr>
@@ -51,38 +56,65 @@
                         <td><b>Last Name</b></td>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control" id="name"></td>
+                        <td><input type="text" class="form-control" id="name" required></td>
                         
-                        <td><input type="text" class="form-control" id="lname"></td>
+                        <td><input type="text" class="form-control" id="lname" required></td>
                     </tr>
+                    <tr></tr>
                     <tr>
-                        <td><b>Date Of Birth</b></td>
-                        <td><b>Email</b></td>
-                    </tr>
-                    <tr>
-                      <td><input type="date" class="form-control" id="dob"></td>
-                      <td><input type="email" class="form-control" id="email"></td>
+                        <td><b>Date Of Birth</b></td> 
+                        <td><b>Email</b></td></tr>
+                      <tr>
+                      <td><input type="date" class="form-control" id="dob" required></td>
+                      
+                      <td><input type="email" class="form-control" id="email" required onchange="checkemail()">
+                        </td>
                   </tr>
-                  
+                  <tr>
+                   <td></td>
+                      <td><label for="error" id="error1"></label></td>
+                   
+                  </tr>
+                  <tr>
+                      <td><b>Contact NO</b></td> 
+                        <td><b>Adress</b></td></tr> 
+                  </tr>
+                  <tr>
+                    <td><input type="text" class="form-control" id="phone" required onchange="phonecheck()"></td>
+                    
+                    <td><input type="text" class="form-control" id="adress" required>
+                      </td>
+                </tr>
+                <tr></tr>
                 <tr>
                   <td><b>Password</b></td>
                   <td><b>Confirm Password</b></td>
               </tr>
+             
               <tr>
-                <td><input type="password" class="form-control" id="password"></td>
-                <td><input type="password" class="form-control" id="cpassword"></td>
-            </tr>
+                <td><input type="password" class="form-control" id="password" required onchange="passcheck()">
+                  </td>
+                 
+                <td><input type="password" class="form-control" id="cpassword" required onchange="cpasscheck()"></td>
+                </tr>
+                <tr> <td>
+                  <label for="error" id="error2"></label>
+                </td></tr>
             <tr>
-              <td><button type="button" class="btn btn-danger">Cancel</button></td>
-              <td><button type="button" class="btn btn-primary">Sign Up</button></td>
+              <td><input type="reset" value="Cancel"></td>
+              <td><input type="submit" value="Sign Up"></td>
             </tr>
                     </table>
                     </form>   
-            </div>
-            
-           
-         </div>
-      </div>
-    
+                  </div>
+                </div>
+                </div>
+          </div>
+          
+          <div class="col col-sm-4"></div>
+       </div>
+    </div>
+  </section>
+ <script src="js/js1.js" type="text/javascript"></script>
 </body>
 </html>
