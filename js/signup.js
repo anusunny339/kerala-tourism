@@ -26,7 +26,7 @@ var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
           if(password.value.length>=8)
           {
-        if(password.value.length>8)
+        if(password.value.length>9)
         {
        
           if(password.value == username.value) {
