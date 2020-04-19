@@ -8,7 +8,10 @@ function login()
         error1.innerHTML="valid email id";
         error1.style.color="green";
         username.style.border="2px solid rgb(43, 107, 226)";
-        if(password.value.length>=5)
+         
+        if(password.value.length>=8)
+        {
+        if(password.value.length>5)
         {
        
         if(password.value == username.value) {
@@ -88,6 +91,13 @@ function login()
   
       } 
       password.style.border="2px solid red";
+    }
+    else{
+      alert("password must contain 8 characters with at least one uppercase and lowercase,must contain at least one number");
+      password.focus();
+      password.style.border="2px solid red";
+      return false;
+    }
         return true; 
     }
    
