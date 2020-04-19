@@ -55,19 +55,20 @@ var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
           return false;
       
          } 
-         if(password.value != cpassword.value)
-          {
-            alert("Error: Password and confirm password not match!");
-            cpassword.focus();
-            cpassword.style.border="2px solid red";
-             return false;
-           }
+         
       
            password.style.border="2px solid rgb(43, 107, 226)";
 
       error2.innerHTML="password  is strong";
       error2.style.color="green";
       password.style.border="2px solid rgb(43, 107, 226)";
+      if(password.value != cpassword.value)
+          {
+            alert("Error: Password and confirm password not match!");
+            cpassword.focus();
+            cpassword.style.border="2px solid red";
+             return false;
+           }
       return true;
      
     }
@@ -107,16 +108,17 @@ var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
         return false;
        
       } 
-      if(password.value !=  cpassword.value)
-      {
-        alert("Error: Password and confirm password not match!");
-        cpassword.focus();
-        Cpassword.style.border="2px solid red";
-        return false;
-      }
+     
       error2.innerHTML="password  is weak";
       error2.style.color="red";
-       password.style.border="2px solid red";
+       password.style.border="2px solid rgb(43, 107, 226)";
+       if(password.value !=  cpassword.value)
+       {
+         alert("Error: Password and confirm password not match!!!");
+         cpassword.focus();
+         cpassword.style.border="2px solid red";
+         return false;
+       }
       return true;
 
     }  
